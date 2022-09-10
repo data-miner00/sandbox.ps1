@@ -1,0 +1,3 @@
+- https://www.youtube.com/watch?v=IHrGresKu2w
+- https://www.powershellgallery.com/
+- https://www.youtube.com/watch?v=f9xPJXslVWE
