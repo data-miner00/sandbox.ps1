@@ -9,3 +9,11 @@ A sandbox repository to store information related to Powershell and scripting ex
 - `logs`: Storing log files
 - `src`: Powershell scripts
 - `src/modules`: Houses all the Powershell modules (`.psm` file)
+
+## Syntax
+
+`Verb-Noun`
+
+Do something-To something
+
+`Get-Verb`

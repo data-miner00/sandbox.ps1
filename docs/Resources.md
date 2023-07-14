@@ -1,3 +1,6 @@
 - https://www.youtube.com/watch?v=IHrGresKu2w
 - https://www.powershellgallery.com/
 - https://www.youtube.com/watch?v=f9xPJXslVWE
+- https://docs.microsoft.com/en-us/powershell/
+- https://hackr.io/blog/powershell-cheat-sheet/amp#powershell-basics
+- https://medium.com/geekculture/developing-using-powershell-283a0ae7b6eb
