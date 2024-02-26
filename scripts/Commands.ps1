@@ -24,7 +24,7 @@ Get-Command -Name *Fire* -CommandType Function
 Get-Help -Name Get-Command -Detailed
 Get-Help -Name *DNS*
 
-# Update help file as sudo
+# Update help file as sudo (run as administrator)
 Update-Help
 
 # Retrieve examples to familiarize with the command
@@ -60,3 +60,60 @@ Get-Service | Select-Object Name,MachineName,Status | Get-Member
 
 # With Sort and filtering
 Get-Service | Where-Object Status -EQ "Stopped" | Select-Object Name,MachineName,Status | Sort-Object -Property MachineName | Get-Member
+
+# Whatif for dry run
+Get-NetFirewallRule -Name *RemoteDesktop* | Set-NetFirewallRule -Enabled 'True' -WhatIf
+
+# Gathering OS information
+# Windows Management Instrumentation (WMI)
+Get-WmiObject
+
+# Common Information MOdel (CIM)
+Get-CimInstance
+
+# Get the counter for os health
+Get-Counter
+
+# Memory
+Get-Counter -ListSet Memory | Select-Object -ExpandProperty Counter
+
+# Check if system is paging out
+Get-Counter -Counter "\Memory\Pages/Sec", "\Memory\% Committed Bytes In Use" | Format-Table
+
+# Get physical memory info
+Get-WmiObject -Class Win32_PhysicalMemory
+Get-CmiInstance -ClassName Win32_PhysicalMemory
+
+# Show Tag and Capacity
+Get-WmiObject -Class Win32_PhysicalMemory | Select-Object Tag,Capacity
+
+# Get all Ip info
+Get-NetIPAddress # ipconfig /all
+Get-NetIPConfiguration
+
+# Get dns client
+Get-DnsClient
+Get-DnsClientCache
+Get-DnsClientServerAddress
+
+# Get simple message block
+Get-SmbMapping
+
+# Utilize event logs to find the time when the system rebooted
+Get-EventLog -List
+Get-EventLog -LogName System | Get-Member
+Get-EventLog -LogName System -Newest 1000 | Where-Object {
+    $_.EventID -eq '1074'
+} | Format-Table MachineName,UserName,TimeGenerated
+
+# Get computer info
+Get-ComputerInfo
+Get-ComputerInfo -Property *memory*
+
+# Get png files
+Get-ChildItem -Path w:\ -Recurse | Where-Object Extension -EQ '.png'
+
+# Working with file system
+Copy-Item w:\ -Destination d:\destination -Recurse -Verbose
+Move-Item d:\destination -Destination d:\finaldestination -Verbose
+Rename-Item d:\finaldestination -NewName d:\obsolete
