@@ -117,3 +117,6 @@ Get-ChildItem -Path w:\ -Recurse | Where-Object Extension -EQ '.png'
 Copy-Item w:\ -Destination d:\destination -Recurse -Verbose
 Move-Item d:\destination -Destination d:\finaldestination -Verbose
 Rename-Item d:\finaldestination -NewName d:\obsolete
+
+# Undo latest Git commit
+git reset HEAD~

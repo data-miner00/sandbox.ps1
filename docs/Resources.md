@@ -5,3 +5,5 @@
 - https://hackr.io/blog/powershell-cheat-sheet/amp#powershell-basics
 - https://medium.com/geekculture/developing-using-powershell-283a0ae7b6eb
 - https://poshcode.gitbook.io/powershell-practice-and-style/style-guide/code-layout-and-formatting
+- [Pester Testing](https://pester.dev/)
+- [Powershell Gallery](https://www.powershellgallery.com/)

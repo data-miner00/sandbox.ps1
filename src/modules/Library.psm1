@@ -44,3 +44,7 @@ function Test-FileNewerThan {
 function Get-PowershellDirectory {
     return $PSHOME
 }
+
+function Get-ComputerName {
+    return $env:COMPUTERNAME
+}
