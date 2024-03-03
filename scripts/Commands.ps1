@@ -22,6 +22,7 @@ Get-Command -Verb Get -Noun *DNS*
 Get-Command -Name *Fire* -CommandType Function
 
 Get-Help -Name Get-Command -Detailed
+Get-Help -Name Get-Command -Online
 Get-Help -Name *DNS*
 
 # Update help file as sudo (run as administrator)
