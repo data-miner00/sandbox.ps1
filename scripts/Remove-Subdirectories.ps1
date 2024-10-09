@@ -4,7 +4,7 @@ Param (
     [String[]]$Directories
 )
 
-Get-ChildItem .\ -Include $Directories -Recurse | foreach ($_) {
+Get-ChildItem .\ -Include $Directories -Recurse | ForEach-Object ($_) {
     Write-Host "Removing $($_.fullname)"
     Remove-Item $_.fullname -Force -Recurse
 }
