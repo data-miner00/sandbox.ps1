@@ -49,3 +49,21 @@ type `get-com`, then hit `TAB` for autocompletion - `Get-Command`
 `"{0:N0}" -f 100000000` : 100, 000, 000 [details](<https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ee692795(v=technet.10)?redirectedfrom=MSDN>)
 
 `($env:PSModulePath).Split(';')`
+
+`Test-Connection` : Sends echo request and display results
+
+`tnc -Computername localhost  -Port 80 -InformationLevel "Detailed"` : Target specific source with detailed report
+
+`Get-NetIPConfiguration` : Get ip network configuration
+
+`Show-Command` : Opens a window to browse or run installed PowerShell commands
+
+`Stop-Service` : Stops a service
+`Start-Service` : Starts a service
+
+---
+
+- https://stackoverflow.com/questions/7147270/hard-reset-of-a-single-file
+  ```
+  git checkout HEAD -- my-file.txt
+  ```
