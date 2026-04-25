@@ -121,3 +121,9 @@ Rename-Item d:\finaldestination -NewName d:\obsolete
 
 # Undo latest Git commit
 git reset HEAD~
+
+# Set git commit date
+git commit --amend --no-edit --date="$(Get-Date -Format o)"
+
+# Set git commit date to specific date
+git commit --amend --no-edit --date="YYYY-MM-DD HH:MM:SS +TZ" # 2023-10-27 10:00:00 +0800
