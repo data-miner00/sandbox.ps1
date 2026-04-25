@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cars>
+  <car>
+    <make>Toyota</make>
+    <model>Camry</model>
+    <year>2020</year>
+  </car>
+  <car>
+    <make>Honda</make>
+    <model>Civic</model>
+    <year>2019</year>
+  </car>
+  <car>
+    <make>Ford</make>
+    <model>Mustang</model>
+    <year>2021</year>
+  </car>
+  <car>
+    <make>BMW</make>
+    <model>X3</model>
+    <year>2018</year>
+  </car>
+  <car>
+    <make>Audi</make>
+    <model>A4</model>
+    <year>2022</year>
+  </car>
+</cars>
