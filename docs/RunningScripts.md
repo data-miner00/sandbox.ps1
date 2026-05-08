@@ -22,3 +22,17 @@ If an error was encountered due to insufficient privilege, try adding `-Scope Cu
 1. Process: The execution policy is only available on that session; closed terminal and it is gone.
 2. CurrentUser: Set the execution policy for the user level. This is persisted in registry when shutdown.
 3. LocalMachine: Set the execution globally for all users. This is persisted as well.
+
+## Running Scripts
+
+1. Use the path directly.
+   ```
+   ./path/Script.ps1
+   ```
+2. Use `&` against a string path.
+   ```
+   & "./path/Script.ps1"
+   # or
+   $path = "./path/Script.ps1";
+   & path
+   ```
